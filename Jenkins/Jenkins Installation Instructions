@@ -1,4 +1,6 @@
 # Steps to install Jenkins at ubuntu 18.04
+#to go to roor directory
+sudo su - 
 
 sudo apt-get update
 sudo apt install openjdk-8-jdk -y
@@ -11,6 +13,7 @@ echo deb https://pkg.jenkins.io/debian binary/ | sudo tee /etc/apt/sources.list.
 sudo apt-get update
 sudo apt-get -y install jenkins
 sudo service jenkins status
+#pres q to comout from status
 
 sudo systemctl start jenkins
 sudo systemctl status jenkins
